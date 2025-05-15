@@ -12,9 +12,10 @@ books = [
 
 
 
+
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', books=books)   
 
 @app.route('/books')
 def show_books():
